@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>トライアン1号</title>
+</head>
+<body onload="draw();">
+  <h1>トライアン1号</h1>
+  <form id="form1" action="#">
+    辺1<input type="text" id="line1" value="3" oninput="draw()"><input type="checkbox" id="line1c" checked oninput="draw()">対角<input type="checkbox" id="theta1c" checked oninput="draw()"><br>
+    辺2<input type="text" id="line2" value="4" oninput="draw()"><input type="checkbox" id="line2c" checked oninput="draw()">対角<input type="checkbox" id="theta2c" checked oninput="draw()"><br>
+    辺3<input type="text" id="line3" value="5" oninput="draw()"><input type="checkbox" id="line3c" checked oninput="draw()">対角<input type="checkbox" id="theta3c" checked oninput="draw()"><br>
+    回転<input type="range" id="rot" value="50" oninput="draw()"><br>
+    拡大<input type="range" id="zoom" value="75" oninput="draw()"><br>
+    横スライド<input type="range" id="xslide" value="50" oninput="draw()"><br>
+    縦スライド<input type="range" id="yslide" value="50" oninput="draw()"><br>
+  </form>
+
+  <canvas id="canvas" width="300" height="300"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
